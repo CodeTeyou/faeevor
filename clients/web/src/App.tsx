@@ -1,8 +1,14 @@
+import { useState } from "react";
+
 export function Header () {
+  const [openState, setOpenState] = useState(false)
+
   return (
     <>
-    <header className="bg-white outline-2 rounded-4xl flex flex-row p-2" >
-      <img src="../../public/logo.svg" alt="logo" className="w-10"/>
+    <header id="header" className={`bg-white/45 outline-1 rounded-4xl p-2 absolute z-20 top-2 left-2 items-center transition-all duration-150 ${openState ? "w-screen" : "w-auto"} `} >
+      <button className="p-0 m-0 flex align-center" onClick={() => {setOpenState(!openState)}}>
+        <img src="/logo.svg" alt="logo" className="w-8"/>
+      </button>
     </header>
     </>
   )
