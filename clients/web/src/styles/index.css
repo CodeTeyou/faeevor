@@ -1,5 +1,13 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 @theme {
-  --hello: green;
+  --color-violet: #9458BD;
+  --color-white: #EFEEFF;
+  --color-purp-white: #CEC9FF;
+  --color-blue: #6158BD;
+  --color-black: #262626;
+
+  --font-jost: "Jost"
+  --font-raleway: "Raleway";
 }

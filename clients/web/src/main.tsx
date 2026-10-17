@@ -1,15 +1,18 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { Header, Home } from "./App";
+import { Header } from "./App";
+import { Error404, Home } from "./pages/index";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Header />
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />}/>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/*" element={<Error404 />} />
+      </Routes>
     </BrowserRouter>
-  </StrictMode>
-)
+  </StrictMode>,
+);

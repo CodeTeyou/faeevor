@@ -30,12 +30,3 @@ export function Header () {
     </>
   )
 }
-
-export function Home () {
-
-  return (
-    <>
-      
-    </>
-  );
-}
