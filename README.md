@@ -38,6 +38,6 @@ For the Backend,
 
 Shipping uses, 
 
-## Vercel
+## Cloudflare Pages
 - SPA Rendering
 - React Compatibility
