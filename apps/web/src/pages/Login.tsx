@@ -1,4 +1,4 @@
-import Shapes from "./../assets/Shapes"
+import Shapes from "./../assets/Shapes";
 
 export function Login() {
   return (
