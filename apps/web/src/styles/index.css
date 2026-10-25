@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 @theme {
   --color-violet: #9458bd;
@@ -8,9 +7,11 @@
   --color-blue: #6158bd;
   --color-black: #262626;
 
-  --font-jost: "Jost" --font-raleway: "Raleway";
+  --font-jost: "Jost";
+  --font-raleway: "Raleway";
 }
 
 body {
   overflow: hidden;
+  background-color: var(--color-white);
 }
