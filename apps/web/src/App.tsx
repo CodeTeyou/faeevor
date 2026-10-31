@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 export function Title() {
   const { pathname } = useLocation();
-  let title:string = pathname.replaceAll("/", " | ").trim().replace(/\|+$/, "")
+  let title:string = pathname.replaceAll("/", " | ").replace(/[|\s]+$/, "")
 
   useEffect(() => {
     document.title = "faeevor" + title
