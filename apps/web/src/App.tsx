@@ -1,17 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
+export function Title() {
+  const { pathname } = useLocation();
+  let title:string = pathname.replaceAll("/", " | ").trim().replace(/\|+$/, "")
 
-function NavLinks() {
+  useEffect(() => {
+    document.title = "faeevor" + title
+  }, [pathname])
+
+  return null;
+}
+
+function Navigation() {
   return (
     <>
-      <a href="/">Home</a>
-      <a href="/Friends">Friends</a>
-      <a href="/Faeevors">Faeevors</a>
+      <NavLink to="/" end>Home</NavLink>
+      <NavLink to="/Friends" end>Friends</NavLink>
+      <NavLink to="/Faeevors" end>Faeevors</NavLink>
     </>
   )
 }
-
-
 
 export function Header () {
   const [openState, setOpenState] = useState(() => localStorage.getItem("headerOpen") === "true")
@@ -25,7 +34,7 @@ export function Header () {
       <div className={`transition-[width, opacity] ${openState ? "w-full opacity-100" : "w-0 opacity-5"} flex flex-row justify-between items-center `}>
         <strong className="pl-2 text-3xl font-bold text-center">Faeevor</strong>
         <nav className="flex flex-row justify-around items-center w-2/5 h-12">
-        <NavLinks />
+        <Navigation />
         </nav>
       </div>
     </header>

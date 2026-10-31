@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function () {
   return (
     <>
@@ -24,12 +26,12 @@ export default function () {
           <div className="flex flex-col justify-center items-center">
             <div className="pt-25">
               <p className="text-2xl font-semibold font-jost">Go Back</p>
-              <a
-                href="/"
+              <NavLink
+                to="/"
                 className="text-8xl font-bold font-raleway text-violet hover:underline"
               >
                 Home?
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

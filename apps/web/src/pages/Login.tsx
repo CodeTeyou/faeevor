@@ -9,5 +9,5 @@ export function Login() {
 }
 
 export function SignUp() {
-  return <></>;
+  return (<></>);
 }
