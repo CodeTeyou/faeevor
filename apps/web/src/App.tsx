@@ -5,6 +5,8 @@ function NavLinks() {
   return (
     <>
       <a href="/">Home</a>
+      <a href="/Friends">Friends</a>
+      <a href="/Faeevors">Faeevors</a>
     </>
   )
 }
@@ -22,7 +24,7 @@ export function Header () {
       </button>
       <div className={`transition-[width, opacity] ${openState ? "w-full opacity-100" : "w-0 opacity-5"} flex flex-row justify-between items-center `}>
         <strong className="pl-2 text-3xl font-bold text-center">Faeevor</strong>
-        <nav className="flex flex-row justify-around items-center w-1/3 h-12">
+        <nav className="flex flex-row justify-around items-center w-2/5 h-12">
         <NavLinks />
         </nav>
       </div>
