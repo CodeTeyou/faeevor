@@ -4,6 +4,10 @@
 
 export { default as Error404 } from "./Error404";
 export * from "./Error404";
+export { default as Faeevors } from "./Faeevors";
+export * from "./Faeevors";
+export { default as Friends } from "./Friends";
+export * from "./Friends";
 export { default as Home } from "./Home";
 export * from "./Home";
 export * from "./Login";
