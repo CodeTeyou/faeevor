@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Jost";
+  src: url(/Jost.otf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(/Raleway.otf);
+}
+
 @theme {
   --color-violet: #9458bd;
   --color-white: #efeeff;

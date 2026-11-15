@@ -26,5 +26,7 @@ dist-ssr
 **/node_modules/
 **/.env
 
+apps/mobile/expo-env.d.ts
+
 # Personal
 desktop.ini
